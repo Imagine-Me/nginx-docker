@@ -17,4 +17,6 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           script: |
             echo "Connected to server"
-            echo "${{ github.server_url }}/${{ github.repository }}"
+            cd Projects/nginx-docker
+            echo "Pulling latest"
+            git pull
