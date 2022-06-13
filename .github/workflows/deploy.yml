@@ -16,6 +16,6 @@ jobs:
           key: ${{secrets.SSH_KEY}}
           username: ${{ secrets.SSH_USERNAME }}
           script: |
+            echo ${{ SSH_KEY }}
             echo "Connected to server"
             echo ${{ github.repository }}
-
